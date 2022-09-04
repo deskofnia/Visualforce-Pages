@@ -1,0 +1,13 @@
+<apex:page controller="FirstController" >
+    <apex:form >
+        <apex:pageBlock title="Account, Contact & Opportunity Create Page">
+            <apex:pageBlockSection title="Account Infromation">
+            	<apex:inputText value="{!accName}" label="Account Name"/>
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockButtons location="Bottom">
+            <apex:commandButton action="{!saveTheRecord}" value="Save The Record"/>
+        	</apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

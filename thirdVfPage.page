@@ -1,0 +1,21 @@
+<apex:page standardController="Account" sidebar="false">
+    <apex:form >
+        <apex:pageBlock >
+        <apex:pageBlockSection title="Account Create Page">
+            <apex:inputField value="{!Account.Name}"/>
+            <apex:inputField value="{!Account.Type}"/>
+            <apex:inputField value="{!Account.Rating}"/>
+        </apex:pageBlockSection>
+        
+        <apex:pageBlockSection title="Account Other Info ">
+          	<apex:inputField value="{!Account.AnnualRevenue}"/>
+            <apex:inputField value="{!Account.Website}"/>
+            
+        </apex:pageBlockSection>
+        
+        <apex:pageBlockButtons location="Bottom">
+            <apex:commandButton action="{!Save}" value="Save The Record"/>
+        </apex:pageBlockButtons>
+    </apex:pageBlock>
+    </apex:form>
+</apex:page>
